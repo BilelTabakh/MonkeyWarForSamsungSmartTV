@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>TunisieNewsSim1</title>
+
+		<!-- TODO : Common API -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/jquery.js"></script>
+		<!-- TODO : Javascript code -->
+		<script language="javascript" type="text/javascript" src="app/javascript/Main.js"></script>		
+
+		<!-- TODO : Style sheets code -->
+		<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">
+		<link rel="stylesheet" href="app/stylesheets/csshake.min.css" type="text/css">
+
+		<!-- TODO: Plugins -->	
+		<script type="text/javascript" language='javascript' src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+		<object id="pluginObjectTVMW" border=0 classid="clsid:SAMSUNG-INFOLINK-TVMW"></object>
+		<object id="pluginObjectNNavi" border=0 classid="clsid:SAMSUNG-INFOLINK-NNAVI"></object>
+		<object id="pluginObjectAudio" border=0 classid="clsid:SAMSUNG-INFOLINK-AUDIO"></object>
+
+	</head>
+
+	<body id="o" onload="Main.onLoad();" onunload="Main.onUnload();">
+
+		<!-- Dummy anchor as focus for key events -->
+					
+		<audio src="africa.mp3" autoplay="autoplay" loop="loop"></audio>
+		
+		<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown();"><div id="fig1"><figure><img alt="banner" src="app/images/banner_01.png"></figure></div></a>
+		
+	<!--  	<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown();"><div id="fig2"><figure><img alt="banner" src="app/images/banner_02.png"></figure></div></a> -->
+		
+		<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown();"><div id="fig2"><figure><img alt="banner" src="app/images/banner_03.png"></figure></div></a>
+		
+		<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown();"><div id="fig3"><figure><img alt="banner" src="app/images/banner_04.png"></figure></div></a>
+		
+	</body>
+</html>

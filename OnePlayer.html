@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>MonkeyWarVersion18</title>
+
+		<!-- TODO : Common API -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/jquery.js'></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/core.js'></script>
+		<!-- TODO : Javascript code -->
+
+
+		<!-- TODO : Style sheets code -->
+	 	<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">	
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<!-- TODO: Plugins -->
+	<script type="text/javascript" src="js/lib/phaser.min.js"></script>
+	<script type="text/javascript" src="js/lib/mt.helper.js"></script>
+	<script type="text/javascript" src="js/lib/mt.data.js"></script>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<!-- TODO: make scripts load autoamtically -->
+	<script type="text/javascript" src="js/state/boot.js"></script>
+	<script type="text/javascript" src="js/state/load.js"></script>
+	<script type="text/javascript" src="js/state/menu.js"></script>
+	<script type="text/javascript" src="js/state/play.js"></script>
+	
+	<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/ui.js'></script>
+	<script type="text/javascript" language='javascript' src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+	<object id="pluginObjectTVMW" border=0	classid="clsid:SAMSUNG-INFOLINK-TVMW"></object>
+	<object id="pluginObjectNNavi" border=0	classid="clsid:SAMSUNG-INFOLINK-NNAVI"></object>
+	<object id="pluginObjectAudio" border=0	classid="clsid:SAMSUNG-INFOLINK-AUDIO"></object>
+
+	</head>
+
+	<body onload="Main.onLoad();" onunload="Main.onUnload();" id = "bodyOne">
+
+		<!-- Dummy anchor as focus for key events -->
+		<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();" onkeyup="Main.keyUP();"></a>
+		
+		<!-- TODO: your code here -->
+	</body>
+</html>
